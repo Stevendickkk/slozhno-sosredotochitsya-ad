@@ -1,16 +1,49 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+/* 
+:root {
+    --accent: #FF8DCB;
+    --main-text: #DB00FF;
+    --highlight-text: #353430;
+    --text: #F1B2CE;
+}
 
 :root.theme-light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+/* light theme */
+html.theme-light {
+  --accent: #FF8FD0;
+  --main-text: #FFB3DE;
+  --highlight-text: #1E1E1E;
+  --text: #1E1E1E;
+  --line: #1E1E1E;
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+html.theme-light .page {
+  background-image: url("../images/cover-image-light.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+html.theme-light .box,
+html.theme-light .box-reverse {
+  border-color: var(--line);
+}
+
+html.theme-light .header__lamp-text,
+html.theme-light .rec-external_element {
+  display: none;
+}
+
+html.theme-light .header__theme-menu-button,
+html.theme-light .header__theme-menu-button_active {
+  color: var(--line);
+  border-color: var(--line);
+}
+
+html.theme-light .title,
+html.theme-light .section__why-title {
+  color: var(--line);
 }
