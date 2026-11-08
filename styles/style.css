@@ -13,6 +13,7 @@
   background-image: url("../images/cover-image-dark.png");
   background-size: auto;
   background-repeat: repeat;
+  background-attachment: fixed;
 }
 .header {
   min-height: 884px;
@@ -98,7 +99,7 @@
 }
 
 .header__main-title {
-  line-height: 83%; 
+  line-height: 83%;
   font-size: 116px;
   font-weight: 700;
   color: var(--main-text);
@@ -185,7 +186,7 @@
 .section__images-title {
   margin-top: 50px;
   font-weight: 700;
-  font-size: 18px;  
+  font-size: 18px;
 }
 
 .section__images-items {
@@ -248,7 +249,7 @@
 @media (max-width: 375px) {
 
   .section__images-item {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -287,10 +288,6 @@
   
   .section__why-title {
     margin-right: 20px;
-  }
-
-  .section__why-title {
-    
     text-align: left;
   }
 
@@ -302,7 +299,7 @@
     margin-bottom: 80px;
   }
   .section__what-title {
-    width: 180px; 
+    width: 180px;
   }
 
   .section__how {
@@ -331,14 +328,14 @@
     min-height: 180px;
   }
   .header__theme-menu-list {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   gap: 10px;
   }
 }
 
 @media (min-width: 1024px) {
-  .header__main-title{
+  .header__main-title {
     font-size: 157px;
     margin-top: 200px;
   }
@@ -358,7 +355,7 @@
   }
 
   .footer-title__text {
-    font-size: 157px; 
+    font-size: 157px;
   }
 }
 
@@ -373,7 +370,7 @@
 .footer-title {
   display: flex;
   justify-content: center;
-  line-height: 83%; 
+  line-height: 83%;
   font-size: 116px;
   font-weight: 700;
   color: var(--main-text);
@@ -381,7 +378,3 @@
   margin: 285px 0px 285px;
 
 }
-
-
-
-
