@@ -21,9 +21,9 @@
     <div class="container">
     <header class="header decorated-zone">
       <div class="header__row">
-        <div class="invise-block"></div>
+        <div class="invise-block"></div>  <!--для десктопного адаптива-->
 
-        <nav class="header__theme-menu" >
+        <nav class="header__theme-menu">
           <ul class="header__theme-menu-list">
             <li class="header__theme-menu-item">
               <button
@@ -63,14 +63,13 @@
         <p>no focus</p>
       </section>
 
-      <div class="box-flex">
+      <div class="header__description__box-flex">
         <div class="header__description">
           <p class="header__description-highlight-text">Что делать, когда не можешь делать ничего</p>
           <p class="header__description-highlight-text">Или почему нам так сложно сконцентрироваться, 
             особенно когда очень надо</p>
         </div>
       </div>
-      
       <div class="box-reverse"></div>
     </header>
   </div>
@@ -79,7 +78,7 @@
     <div class="container">
     <section class="section__why">
         <h2 class="section__why-title title">Почему сосредоточиться так сложно</h2>
-        <ul class="section__why-items">
+        <ul class=" ">
           <li>
             <h3 class="section__why-item item">Многозадачность</h3>
             <p class="section__why-item-text text">Особенно сложно сосредоточиться, 
@@ -113,7 +112,7 @@
 
     <section class="section__what">
         <h2 class="section__what-title title">Что снижает концентрацию внимания?</h2>
-        <ul>
+        <ul class="section__what-items">
           <li>
             <h3 class="section__what-item item">Концентрация</h3>
             <p class="section__what-item-text text">Как концентрация может снижаться из-за… 
@@ -148,8 +147,9 @@
     <section class="section__how">
         <h2 class="section__how-title title">Как концентрироваться лучше, чем золотая рыбка 
           (то есть дольше трёх секунд)</h2>
-          <h3 class="section__how-advances-title item">5 простых (на самом деле не очень) советов</h3>
+          
         <ul>
+          <h3 class="section__how-advances-title item">5 простых (на самом деле не очень) советов</h3>
           <li>
             <p class="section__how-item item">Представьте небо и облака</p>
             <p class="section__how-item-text text"> Или листья в ручье. Тут дело
@@ -206,12 +206,12 @@
     <section class="section__images">
       <p class="section__images-title item">А можно в картинках?</p>
     
-      <div class="parent">
-          <div class="div2"><img src="images/street.png" alt=""></div>
-          <div class="div5"><img src="images/sunset.png" alt=""></div>
-          <div class="div6"><img src="images/tape.png" alt=""></div>
-          <div class="div8"><img src="images/ice-cream.png" alt=""></div>
-          <div class="div7"><img src="images/books.png" alt=""></div>
+      <div class="section__images-items">
+          <div class="section__images__item--landscape"><img class="image" src="images/sunset.png" alt="закат"></div>
+          <div class="section__images__item--icecream"><img class="image" src="images/ice-cream.png" alt="мороженка с котятками"></div>
+          <div class="section__images__item--cassete"><img class="image" src="images/tape.png" alt="видео-кассета"></div>
+          <div class="section__images__item--books"><img class="image" src= "images/books.png"alt="стопка разных книжек"></div>
+          <div class="section__images__item--street"><img  class="image"src="images/street.png" alt="японская летняя улица"></div>
       </div>
     
 </section>
@@ -222,7 +222,7 @@
     <div class="container">
       <div class="footer-box box"></div>
         <div class="footer-title">
-          <p>focus</p>
+          <p class="footer-title__text">focus</p>
         </div>
       <div class="box-reverse"></div>
     </div>
